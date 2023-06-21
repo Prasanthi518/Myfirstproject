@@ -1,0 +1,62 @@
+<!--<div
+
+  class="example-container"
+
+>
+
+  <mat-toolbar color="primary" class="example-toolbar">
+
+    <button mat-icon-button (click)="snav.toggle()">
+
+      <mat-icon>menu</mat-icon>
+
+    </button>
+
+    <h1 class="example-app-name">my first app</h1>
+
+  </mat-toolbar>
+<!--Angular Material tab-->
+<!-- <mat-tab-group class="parent-tab-group" animationDuration="0ms" [selectedIndex]="2">
+    <mat-tab label="Aquisition">Aquisition</mat-tab>
+    <mat-tab label="New Title">New Content</mat-tab>
+    <mat-tab label="Development">Development</mat-tab>
+    </mat-tab-group> -->
+  <!--<mat-sidenav-container
+
+    class="example-sidenav-container"
+
+  >
+
+    <mat-sidenav #snav>
+
+      <mat-nav-list>
+
+        <span *ngFor="let item of menu">
+
+          <mat-list-item routerLink='{{item.route}}'>
+
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+
+              {{item.displayName | uppercase | newPipe }} 
+
+            </div>
+
+          </mat-list-item>
+
+        </span>
+
+      </mat-nav-list>
+
+    </mat-sidenav>
+
+
+
+
+    <mat-sidenav-content> <router-outlet></router-outlet> </mat-sidenav-content>
+
+  </mat-sidenav-container>
+  
+</div> -->
+<input [(ngModel)]="name" (input)="name=getValue($event)">
+Value: {{ name }}
+<router-outlet></router-outlet>
