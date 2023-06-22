@@ -22,6 +22,7 @@ import { MatCardModule } from '@angular/material/card';
 import { NewPipePipe } from './new-pipe.pipe';
 import { BreedCommonComponent } from './breed-common/breed-common.component';
 import { FormsModule } from '@angular/forms';
+import { AddressFormComponent } from './address-form/address-form.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     ContactComponent,
     NewPipePipe,
-    BreedCommonComponent
+    BreedCommonComponent,
+    AddressFormComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +51,7 @@ import { FormsModule } from '@angular/forms';
       { path: '', component: HomeComponent },
        { path: 'about', component: AboutComponent },
       { path: 'contact', component: ContactComponent },
-      
+      {path: 'address-form',component: AddressFormComponent},
       // otherwise redirect to home
       { path: '**', redirectTo: '' }
       ] ), BrowserAnimationsModule// created a unique path/ address for comp to reflect on my home page(forroot can be written in single file in whole application)
